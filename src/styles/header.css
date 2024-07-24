@@ -1,0 +1,8 @@
+.header {
+    display: flex;
+}
+
+.header__logo {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
