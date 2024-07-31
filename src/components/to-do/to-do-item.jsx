@@ -1,6 +1,12 @@
 const ToDoItem = ({item}) => {
     return (
-        <li>{item.text}</li>
+        <li className="to-do">
+            <button>
+                {item.isChecked ? <p></p> : null}
+            </button>
+            <p>{item.text}</p>
+            <button></button>
+        </li>
     );
 };
 

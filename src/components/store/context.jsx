@@ -5,14 +5,17 @@ const ToDoContext = React.createContext();
 const initialTodos = [
     {
         text: 'Do something important.',
+        isCompleted: false,
         id: '01',
     },
     {
         text: 'Do something less important.',
+        isCompleted: false,
         id: '02',
     },
     {
         text: 'Have fun.',
+        isCompleted: false,
         id: '03',
     },
 ];
