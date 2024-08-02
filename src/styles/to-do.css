@@ -1,9 +1,37 @@
 .to-do {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 1rem;
 }
 
-.to-do_text {
-    align-self: stretch;
+.to-do__text {
+    flex-grow: 2;
     text-align: left;
+    color: var(--text-color-dark);
+}
+
+.to-do__text--completed {
+    text-decoration: line-through;
+    color: var(--text-color-gray);
+}
+
+.to-do__btn {
+    background-color: transparent;
+    border: none;
+    outline: var(--text-color-active);
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.to-do__btn--check {
+    border: solid 0.05rem var(--text-color-dark);
+    border-radius: 100%;
+}
+
+.to-do__btn--completed {
+    background: var(--gradient);
+    border: none;
 }

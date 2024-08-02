@@ -15,7 +15,7 @@ const initialTodos = [
     },
     {
         text: 'Have fun.',
-        isCompleted: false,
+        isCompleted: true,
         id: '03',
     },
 ];
