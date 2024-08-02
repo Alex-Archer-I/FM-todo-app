@@ -2,6 +2,12 @@
     --bright-blue: hsl(220, 98%, 61%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .light-mode {
     --text-color-gray: rgb(150, 150, 160);
     --text-color-dark: rgb(95, 94, 108);
@@ -17,4 +23,14 @@
 body {
     font-family: "Josefin Sans", sans-serif;
     background-color: var(--bg-color);
+}
+
+.main {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.main__item {
+    list-style: none;
+    width: 100%;
 }

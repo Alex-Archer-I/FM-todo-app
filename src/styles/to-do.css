@@ -1,3 +1,9 @@
 .to-do {
     display: flex;
+    justify-content: space-between;
+}
+
+.to-do_text {
+    align-self: stretch;
+    text-align: left;
 }

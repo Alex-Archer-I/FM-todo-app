@@ -12,7 +12,7 @@ const ToDoList = () => {
     });
 
     return (
-        <ul>{content}</ul>
+        <ul className="main__item">{content}</ul>
     );
 };
 
