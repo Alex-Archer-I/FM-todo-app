@@ -1,6 +1,7 @@
 import {useContext} from 'react';
 
 import ToDoItem from './to-do-item';
+import ToDoSummary from './to-do-summary';
 
 import {ToDoContext} from '../store/context';
 
@@ -12,7 +13,10 @@ const ToDoList = () => {
     });
 
     return (
-        <ul className="main__item">{content}</ul>
+        <ul className="main__item">
+            {content}
+            <ToDoSummary/>
+        </ul>
     );
 };
 

@@ -10,18 +10,23 @@
 .to-do__text {
     flex-grow: 2;
     text-align: left;
-    color: var(--text-color-dark);
+    color: var(--text-color);
 }
 
 .to-do__text--completed {
     text-decoration: line-through;
-    color: var(--text-color-gray);
+    opacity: 0.5;
 }
 
 .to-do__btn {
     background-color: transparent;
     border: none;
     outline: var(--text-color-active);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.to-do__btn--round {
     width: 1.8rem;
     height: 1.8rem;
 }
@@ -34,4 +39,19 @@
 .to-do__btn--completed {
     background: var(--gradient);
     border: none;
+}
+
+.to-do__summary {
+    color: var(--text-color-gray);
+}
+
+.to-do__action {
+    font-size: var(--fs-16);
+    background-color: transparent;
+    border: none;
+    outline: var(--text-color-active);
+    flex-shrink: 0;
+    cursor: pointer;
+    color: var(--text-color-gray);
+    font-family: inherit;
 }

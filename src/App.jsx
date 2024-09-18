@@ -11,7 +11,7 @@ const App = () => {
   return (
     <ContextProvider>
       <main className="main light-mode">
-        <Header/>
+        <Header theme={theme}/>
         <ToDoList/>
       </main>
     </ContextProvider>

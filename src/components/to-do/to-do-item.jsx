@@ -9,11 +9,11 @@ const ToDoItem = ({item}) => {
 
     return (
         <li className="to-do">
-            <button className={`to-do__btn to-do__btn--check ${completeBtnClass}`}>
+            <button className={`to-do__btn to-do__btn--round to-do__btn--check ${completeBtnClass}`}>
                 {item.isCompleted ? <img src="../images/icon-check.svg" alt=""/> : null}
             </button>
             <p className={`to-do__text ${completeTextClass}`}>{item.text}</p>
-            <button className="to-do__btn to-do__btn--delete">
+            <button className="to-do__btn to-do__btn--round to-do__btn--delete">
                 <img src="../images/icon-cross.svg" alt=""/>
             </button>
         </li>
