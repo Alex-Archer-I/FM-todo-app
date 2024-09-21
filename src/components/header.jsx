@@ -1,4 +1,4 @@
-const Header = ({theme}) => {
+const Header = ({theme, changeTheme}) => {
     let themeClass;
 
     if (theme === 'dark') {
@@ -7,10 +7,14 @@ const Header = ({theme}) => {
         themeClass = 'header__switch--light';
     };
 
+    const clickHandler = () => {
+        changeTheme();
+    };
+
     return (
         <header className="header">
             <h1 className="header__logo">Todo</h1>
-            <button className={`header__switch ${themeClass}`}></button>
+            <button className={`header__switch ${themeClass}`} onClick={clickHandler}></button>
         </header>
     );
 };

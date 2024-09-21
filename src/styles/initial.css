@@ -16,6 +16,8 @@
 
     --bright-blue: hsl(220, 98%, 61%);
     --gradient: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+    --transition-time: 0.3s;
 }
 
 * {
@@ -33,7 +35,7 @@
 
     background-image: url('../images/bg-mobile-light.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .dark-mode {
@@ -45,17 +47,19 @@
 
     background-image: url('../images/bg-mobile-dark.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 body {
     font-family: "Josefin Sans", sans-serif;
-    background-color: var(--bg-color);
 }
 
 .main {
     width: 100%;
+    min-height: 100vh;
     padding: 3rem 2rem;
+    background-color: var(--bg-color);
+    transition: background-color var(--transition-time), background-image var(--transition-time);
 }
 
 .main__item {

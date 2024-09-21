@@ -8,10 +8,18 @@ import {ContextProvider} from './components/store/context';
 const App = () => {
   const [theme, setTheme] = useState('dark');
 
+  const changeTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+    } else {
+      setTheme('dark');
+    };
+  };
+
   return (
     <ContextProvider>
-      <main className="main light-mode">
-        <Header theme={theme}/>
+      <main className={`main ${theme}-mode`}>
+        <Header theme={theme} changeTheme={changeTheme}/>
         <ToDoList/>
       </main>
     </ContextProvider>

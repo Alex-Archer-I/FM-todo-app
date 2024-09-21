@@ -1,18 +1,27 @@
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 .header__logo {
     text-transform: uppercase;
     letter-spacing: 1rem;
+    color: #ffffff;
 }
 
 .header__switch {
     border: none;
     background-color: transparent;
+    width: 26px;
+    height: 26px;
+    transition: background-image 0.3s;
 }
 
 .header__switch--dark {
+    background-image: url('../images/icon-sun.svg');
+}
+
+.header__switch--light {
     background-image: url('../images/icon-moon.svg');
 }

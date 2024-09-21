@@ -5,6 +5,8 @@
     gap: 2rem;
     background-color: white;
     padding: 1rem;
+    background-color: var(--card-color);
+    transition: background-color var(--transition-time);
 }
 
 .to-do__text {
@@ -32,7 +34,7 @@
 }
 
 .to-do__btn--check {
-    border: solid 0.05rem var(--text-color-dark);
+    border: solid 0.05rem var(--text-color);
     border-radius: 100%;
 }
 
