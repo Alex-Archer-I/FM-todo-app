@@ -9,6 +9,12 @@
     transition: background-color var(--transition-time);
 }
 
+.to-do--input {
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+
 .to-do__text {
     flex-grow: 2;
     text-align: left;
@@ -56,4 +62,9 @@
     cursor: pointer;
     color: var(--text-color-gray);
     font-family: inherit;
+}
+
+.to-do__action:hover,
+.to-do__action:focus {
+    color: var(--text-color-active);
 }

@@ -1,0 +1,7 @@
+.form__input {
+    outline: transparent;
+    caret-color: white;
+    color: var(--text-color);
+    caret-color: var(--text-color);
+    font-family: inherit;
+}

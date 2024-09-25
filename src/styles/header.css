@@ -1,7 +1,8 @@
 .header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .header__logo {

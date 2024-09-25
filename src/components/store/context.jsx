@@ -5,7 +5,7 @@ const ToDoContext = React.createContext();
 const initialTodos = [
     {
         text: 'Do something important.',
-        isCompleted: true,
+        isCompleted: false,
         id: '01',
     },
     {
