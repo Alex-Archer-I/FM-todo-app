@@ -6,7 +6,7 @@ import ToDoSummary from './to-do-summary';
 import {ToDoContext} from '../store/context';
 
 const ToDoList = () => {
-    const {todos} = useContext(ToDoContext);
+    const {todos, completeTodo, deleteTodo} = useContext(ToDoContext);
     let activeTodos = 0;
 
     const content = todos.map(item => {
@@ -14,7 +14,7 @@ const ToDoList = () => {
             activeTodos++;
         };
 
-        return <ToDoItem item={item} key={item.id}/>
+        return <ToDoItem item={item} completeTodo={completeTodo} deleteTodo={deleteTodo} key={item.id}/>
     });
 
     return (

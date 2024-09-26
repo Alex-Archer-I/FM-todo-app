@@ -23,8 +23,25 @@ const initialTodos = [
 const ContextProvider = (props) => {
     const [todos, setTodos] = useState(initialTodos);
 
+    const completeTodo = (id) => {
+        const newTodos = [...todos];
+        newTodos.forEach(todo => {
+            if (todo.id === id) {
+                todo.isCompleted = true;
+            };
+        });
+        setTodos(newTodos);
+    };
+
+    const deleteTodo = (id) => {
+        const newTodos = todos.filter((item) => {
+            return item.id !== id;
+        });
+        setTodos(newTodos);
+    };
+
     return (
-        <ToDoContext.Provider value={{todos}}>{props.children}</ToDoContext.Provider>
+        <ToDoContext.Provider value={{todos, completeTodo, deleteTodo}}>{props.children}</ToDoContext.Provider>
     );
 };
 
