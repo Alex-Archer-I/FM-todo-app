@@ -15,6 +15,11 @@
     background: transparent;
 }
 
+.to-do--filters {
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 .to-do__text {
     flex-grow: 2;
     text-align: left;
@@ -42,6 +47,11 @@
 .to-do__btn--check {
     border: solid 0.05rem var(--text-color);
     border-radius: 100%;
+}
+
+.to-do__btn--check:focus,
+.to-do__btn--delete:focus {
+    transform: scale(1.1);
 }
 
 .to-do__btn--completed {
